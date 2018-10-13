@@ -1,8 +1,8 @@
 module.exports = {
     test() {
         var nem = require("../src/index.js");
-        var nis = new nem("http://go.nem.ninja:7890");
-        nis.get("/account/get", {"address": "NAHPYR2PHSZ5MGXKQSW3HFDMIXM36JBHDHCPXDQB"}, function (response) {
+        var nis = new nem("http://bob.nem.ninja:8765");
+        nis.get("/account/get", {"address": "TDADSXXYDXV76YS5KBJZHGHSKDSDEKS3Q2UNLZAC"}, function (response) {
             console.log(response.body);
         });
         nis.post("/account/unlocked/info", {}, function (response) {
